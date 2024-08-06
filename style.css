@@ -1,0 +1,243 @@
+* {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  padding: 0%;
+  margin: 0%;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: hsl(210, 46%, 95%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main {
+  display: flex;
+}
+body section {
+  border-radius: 10px;
+}
+body section img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+body section #tituloDaniel,
+body section #tituloJonathan,
+body section #tituloKira,
+body section #tituloJeanette,
+body section #tituloPatrick,
+body section #paragrafoDaniel,
+body section #paragrafoJonathan,
+body section #paragrafoKira,
+body section #paragrafoJeanette,
+body section #paragrafoPatrick {
+  margin-left: 30px;
+  margin-right: 30px;
+  position: relative;
+  bottom: 9%;
+}
+body section #tituloDaniel,
+body section #tituloJonathan,
+body section #tituloPatrick,
+body section #paragrafoDaniel,
+body section #paragrafoJonathan,
+body section #paragrafoPatrick {
+  color: white;
+}
+body section #tituloDaniel,
+body section #tituloJonathan,
+body section #tituloKira,
+body section #tituloJeanette,
+body section #tituloPatrick {
+  margin-bottom: 20px;
+}
+body section #nomeDaniel,
+body section #nomeJonathan,
+body section #nomePatrick,
+body section #nomeJeanette,
+body section #nomeKira,
+body section #verificadoDaniel,
+body section #verificadoPatrick,
+body section #verificadoJonathan,
+body section #verificadoJeanette,
+body section #verificadoKira {
+  font-size: 18px;
+  font-weight: 400;
+  margin-left: 100px;
+  color: white;
+  position: relative;
+  bottom: 15%;
+}
+body section #nomeKira,
+body section #nomeJeanette,
+body section #verificadoJeanette,
+body section #verificadoKira {
+  color: hsl(217, 19%, 35%);
+}
+body section #nomeKira,
+body section #verificadoKira {
+  bottom: 7.5%;
+}
+body section #verificado,
+body section #paragrafoDaniel,
+body section #paragrafoJonathan,
+body section #paragrafoPatrick {
+  color: hsla(0, 0%, 81%, 0.804);
+}
+body section #tituloKira,
+body section #tituloJeanette,
+body section #paragrafoKira,
+body section #paragrafoJeanette {
+  color: hsl(217, 19%, 35%);
+  bottom: 4%;
+}
+body .cima {
+  display: flex;
+}
+body .cima .daniel {
+  width: 650px;
+  height: 330px;
+  background-color: hsl(263, 55%, 52%);
+  margin-right: 30px;
+}
+body .cima .daniel #fotoDaniel {
+  border: 3px solid rgb(172, 126, 246);
+}
+body .cima .jonathan {
+  width: 300px;
+  height: 330px;
+  background-color: hsl(217, 19%, 35%);
+  margin-right: 30px;
+}
+body .cima .kira {
+  width: 300px;
+  height: 700px;
+  background-color: white;
+}
+body .baixo {
+  display: flex;
+  position: fixed;
+  margin-right: 302px;
+  margin-top: 370px;
+}
+body .baixo .jeanette {
+  width: 300px;
+  height: 330px;
+  background-color: white;
+  margin-right: 30px;
+}
+body .baixo .patrick {
+  width: 650px;
+  height: 330px;
+  background-color: hsl(219, 29%, 14%);
+  margin-right: 30px;
+}
+body .baixo .patrick #fotoPatrick {
+  border: 3px solid rgb(138, 78, 241);
+}
+
+@media (min-width: 200px) and (max-width: 800px) {
+  * {
+    margin: 0%;
+    padding: 0%;
+  }
+  body {
+    height: 200vh;
+    width: 100%;
+    align-items: normal;
+    overflow-x: hidden;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  body main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body section {
+    min-width: 499px;
+    max-width: 500px;
+    margin: 0px;
+    margin-bottom: 30px;
+  }
+  body section #nomeDaniel,
+  body section #verificadoDaniel {
+    bottom: 10%;
+  }
+  body section #nomeJonathan,
+  body section #verificadoJonathan {
+    bottom: 15%;
+  }
+  body section #nomeKira,
+  body section #verificadoKira {
+    bottom: 11%;
+  }
+  body section #nomeJonathan,
+  body section #verificadoJonathan {
+    bottom: 15%;
+  }
+  body section #tituloDaniel,
+  body section #tituloJonathan,
+  body section #tituloKira,
+  body section #tituloJeanette,
+  body section #tituloPatrick,
+  body section #paragrafoDaniel,
+  body section #paragrafoJonathan,
+  body section #paragrafoKira,
+  body section #paragrafoJeanette,
+  body section #paragrafoPatrick {
+    bottom: 0%;
+  }
+  body .cima {
+    margin-top: 50px;
+  }
+  body .cima .daniel {
+    height: 500px;
+    margin-top: 0px;
+  }
+  body .cima .daniel br {
+    display: none;
+  }
+  body .cima .jonathan {
+    height: 300px;
+    margin-top: 0px;
+  }
+  body .cima .jonathan br {
+    display: none;
+  }
+  body .cima .kira {
+    height: 450px;
+    margin-top: 0px;
+    margin-right: 30px;
+  }
+  body .cima .kira br {
+    display: none;
+  }
+  body .baixo {
+    display: flex;
+    position: relative;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  body .baixo .jeanette {
+    height: 300px;
+    margin-top: 0px;
+    margin-right: 30px;
+  }
+  body .baixo .jeanette br {
+    display: none;
+  }
+  body .baixo .patrick {
+    height: 450px;
+    margin-top: 0px;
+    margin-right: 30px;
+  }
+  body .baixo .patrick br {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,289 @@
+* {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+
+    background-color: hsl(210, 46%, 95%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    main {
+        display: flex;
+    }
+
+    section {
+        border-radius: 10px;
+
+        img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-left: 30px;
+            margin-top: 30px;
+        }
+
+        #tituloDaniel,
+        #tituloJonathan,
+        #tituloKira,
+        #tituloJeanette,
+        #tituloPatrick,
+
+        #paragrafoDaniel,
+        #paragrafoJonathan,
+        #paragrafoKira,
+        #paragrafoJeanette,
+        #paragrafoPatrick {
+            margin-left: 30px;
+            margin-right: 30px;
+            position: relative;
+            bottom: 9%;
+        }
+
+        #tituloDaniel,
+        #tituloJonathan,
+        #tituloPatrick,
+        #paragrafoDaniel,
+        #paragrafoJonathan,
+        #paragrafoPatrick {
+            color: #ffff;
+        }
+
+        #tituloDaniel,
+        #tituloJonathan,
+        #tituloKira,
+        #tituloJeanette,
+        #tituloPatrick {
+            margin-bottom: 20px;
+        }
+
+        #nomeDaniel,
+        #nomeJonathan,
+        #nomePatrick,
+        #nomeJeanette,
+        #nomeKira,
+        #verificadoDaniel,
+        #verificadoPatrick,
+        #verificadoJonathan,
+        #verificadoJeanette,
+        #verificadoKira {
+            font-size: 18px;
+            font-weight: 400;
+            margin-left: 100px;
+            color: #ffff;
+            position: relative;
+            bottom: 15%;
+        }
+
+        #nomeKira,
+        #nomeJeanette,
+        #verificadoJeanette,
+        #verificadoKira {
+            color: hsl(217, 19%, 35%);
+        }
+
+        #nomeKira,
+        #verificadoKira {
+            bottom: 7.5%;
+        }
+
+        #verificado,
+        #paragrafoDaniel,
+        #paragrafoJonathan,
+        #paragrafoPatrick {
+            color: hsla(0, 0%, 81%, 0.804);
+        }
+
+        #tituloKira,
+        #tituloJeanette,
+        #paragrafoKira,
+        #paragrafoJeanette {
+            color: hsl(217, 19%, 35%);
+            bottom: 4%;
+        }
+    }
+
+    .cima {
+        display: flex;
+        .daniel {
+            width: 650px;
+            height: 330px;
+            background-color: hsl(263, 55%, 52%);
+            margin-right: 30px;
+
+            #fotoDaniel {
+                border: 3px solid rgb(172, 126, 246);
+            }
+
+        }
+
+        .jonathan {
+            width: 300px;
+            height: 330px;
+            background-color: hsl(217, 19%, 35%);
+            margin-right: 30px;
+        }
+
+        .kira {
+            width: 300px;
+            height: 700px;
+            background-color: #ffff;
+        }
+    }
+
+    .baixo {
+        display: flex;
+        position: fixed;
+        margin-right: 302px;
+        margin-top: 370px;
+
+        .jeanette {
+            width: 300px;
+            height: 330px;
+            background-color: #ffff;
+            margin-right: 30px;
+        }
+
+        .patrick {
+            width: 650px;
+            height: 330px;
+            background-color: hsl(219, 29%, 14%);
+            margin-right: 30px;
+
+            #fotoPatrick {
+                border: 3px solid rgb(138, 78, 241);
+            }
+        }
+    }
+}
+
+@media (min-width: 200px) and (max-width: 800px) {
+    * {
+        margin: 0%;
+        padding: 0%;
+    }
+
+    body {
+        height: 200vh;
+        width: 100%;
+        align-items: normal;
+        overflow-x: hidden;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        section {
+
+            min-width: 499px;
+            max-width: 500px;
+            margin: 0px;
+
+            margin-bottom: 30px;
+
+            #nomeDaniel,
+            #verificadoDaniel {
+                bottom: 10%;
+            }
+
+            #nomeJonathan,
+            #verificadoJonathan {
+                bottom: 15%;
+            }
+            #nomeKira,
+            #verificadoKira {
+                bottom: 11%;
+            }
+            #nomeJonathan,
+            #verificadoJonathan {
+                bottom: 15%;
+            }
+
+            #tituloDaniel,
+            #tituloJonathan,
+            #tituloKira,
+            #tituloJeanette,
+            #tituloPatrick,
+            #paragrafoDaniel,
+            #paragrafoJonathan,
+            #paragrafoKira,
+            #paragrafoJeanette,
+            #paragrafoPatrick {
+                bottom: 0%;
+            }
+
+        }
+
+        .cima {
+            margin-top: 50px;
+
+            .daniel {
+                height: 500px;
+                margin-top: 0px;
+
+                br {
+                    display: none;
+                }
+            }
+
+            .jonathan {
+                height: 300px;
+                margin-top: 0px;
+
+                br {
+                    display: none;
+                }
+            }
+
+            .kira {
+                height: 450px;
+                margin-top: 0px;
+                margin-right: 30px;
+
+                br {
+                    display: none;
+                }
+            }
+        }
+
+        .baixo {
+            display: flex;
+            position: relative;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            margin-top: 0px;
+            
+
+            .jeanette {
+                height: 300px;
+                margin-top: 0px;
+                margin-right: 30px;
+
+                br {
+                    display: none;
+                }
+            }
+            .patrick {
+                height: 450px;
+                margin-top: 0px;
+                margin-right: 30px;
+
+                br {
+                    display: none;
+                }
+            }
+        }
+
+    }
+
+}
